@@ -1,0 +1,40 @@
+.bug(@color){
+  border:1px solid @color;
+}
+.w(@val){
+  width:unit(@val/@rem-size,rem)
+}
+.h(@val){
+  height:unit(@val/@rem-size,rem)
+}
+.l_h(@val){
+  line-height:unit(@val/@rem-size,rem)
+}
+//定位
+.bottom(@px){
+  bottom: unit(@px/@rem-size,rem);
+}
+.top(@px){
+  top: unit(@px/@rem-size,rem);
+}
+.left(@px){
+  left: unit(@px/@rem-size,rem);
+}
+.right(@px){
+  right: unit(@px/@rem-size,rem);
+}
+
+//padding
+.padding(@top,@right,@bottom,@left){
+  padding-top:unit(@top/@rem-size,rem);
+  padding-right:unit(@right/@rem-size,rem);
+  padding-bottom:unit(@bottom/@rem-size,rem);
+  padding-left:unit(@left/@rem-size,rem);
+}
+//margin
+.margin(@top,@right,@bottom,@left){
+  margin-top:unit(@top/@rem-size,rem);
+  margin-right:unit(@right/@rem-size,rem);
+  margin-bottom:unit(@bottom/@rem-size,rem);
+  margin-left:unit(@left/@rem-size,rem);
+}
